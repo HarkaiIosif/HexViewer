@@ -12,7 +12,7 @@ namespace HexViewer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Introduceti numele fisierului");
+            Console.WriteLine("Introduceti calea fisierului");
             string file = Console.ReadLine();
             if (!File.Exists(file)) Console.WriteLine("Fisierul nu exista");
             else
@@ -57,6 +57,7 @@ namespace HexViewer
                     }
                     Console.Write("|");
                     Console.Write(copy);
+                Console.WriteLine();
             }
         }
     }
